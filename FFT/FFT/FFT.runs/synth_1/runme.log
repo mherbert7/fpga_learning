@@ -1,0 +1,305 @@
+
+*** Running vivado
+    with args -log tester.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tester.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source tester.tcl -notrace
+Command: synth_design -top tester -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15740 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 332.008 ; gain = 101.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tester' [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:46]
+WARNING: [Synth 8-5640] Port 'rst' is missing in component declaration [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:47]
+INFO: [Synth 8-3491] module 'clock_scaler' declared at 'C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/clock_scaler.vhd:36' bound to instance 'u1' of component 'clock_scaler' [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'clock_scaler' [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/clock_scaler.vhd:43]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/clock_scaler.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'clock_scaler' (1#1) [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/clock_scaler.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'tester' (2#1) [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:46]
+WARNING: [Synth 8-3917] design tester has port ja[7] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[6] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[5] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[4] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[3] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[2] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[1] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 384.422 ; gain = 153.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[31] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[30] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[29] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[28] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[27] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[26] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[25] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[24] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[23] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[22] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[21] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[20] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[19] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[18] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[17] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[16] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[15] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[14] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[13] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[12] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[11] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[10] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[9] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:scale_factor[8] to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u1:rst to constant 0 [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/tester.vhd:66]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 384.422 ; gain = 153.738
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Marcus/Desktop/Arty/arty_rev_B.xdc]
+Finished Parsing XDC File [C:/Users/Marcus/Desktop/Arty/arty_rev_B.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Marcus/Desktop/Arty/arty_rev_B.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tester_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tester_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 690.203 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 690.203 ; gain = 459.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 690.203 ; gain = 459.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 690.203 ; gain = 459.520
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element clockCounter_reg was removed.  [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/clock_scaler.vhd:60]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 690.203 ; gain = 459.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_scaler 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element u1/clockCounter_reg was removed.  [C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.srcs/sources_1/new/clock_scaler.vhd:60]
+WARNING: [Synth 8-3917] design tester has port ja[7] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[6] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[5] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[4] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[3] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[2] driven by constant 1
+WARNING: [Synth 8-3917] design tester has port ja[1] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 690.203 ; gain = 459.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 702.855 ; gain = 472.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 702.855 ; gain = 472.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 721.992 ; gain = 491.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 721.992 ; gain = 491.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 721.992 ; gain = 491.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 721.992 ; gain = 491.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 721.992 ; gain = 491.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 721.992 ; gain = 491.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 721.992 ; gain = 491.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT2   |    58|
+|4     |LUT4   |     8|
+|5     |FDRE   |    33|
+|6     |IBUF   |     9|
+|7     |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |   133|
+|2     |  u1     |clock_scaler |   111|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 721.992 ; gain = 491.309
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 721.992 ; gain = 185.527
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 721.992 ; gain = 491.309
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 722.113 ; gain = 495.941
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Marcus/Desktop/Arty/FFT/FFT/FFT.runs/synth_1/tester.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tester_utilization_synth.rpt -pb tester_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 722.113 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  9 22:48:45 2018...
